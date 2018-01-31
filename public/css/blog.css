@@ -1,0 +1,228 @@
+/*
+ * Globals
+ */
+body {
+    font-family: Candara;
+    color: #000;
+    white-space: nowrap;
+    min-width: 1100px;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    font-family: Candara;
+    font-weight: normal;
+    color: #000;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    height: 5px; /* Толщина линии */
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+span {
+    display: inline-block;
+}
+
+p {
+    margin: 0 0 0 0px;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+/*@media (min-width: 1200px) {*/
+/*.container {*/
+/*width: 1100px;*/
+/*}*/
+/*}*/
+
+.container {
+    width: 1100px;
+}
+
+/*
+ * Header
+ */
+
+.blog-masthead {
+    background-color: #fff;
+}
+
+.blog-logo, .slog, .logo {
+    float: left;
+}
+
+.logo-red, .slog-red {
+    color: #dd0000;
+}
+
+.blog-logo {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.slog {
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.logo {
+    font-size: 52px;
+    margin-top: -14px;
+}
+
+/* Nav links */
+.blog-nav {
+    float: right;
+    font-size: 20px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.blog-nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;
+    color: #000;
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+    color: #dd0000;
+    text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+    color: #dd0000;
+}
+
+.blog-nav .active:after {
+    float: right;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+}
+
+/*
+ * Blog name and description
+ */
+.bg-title{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    margin-bottom: -5px;
+    box-shadow: 1px 1px 3px #999999;
+    background-image: url("../img/bg-title.png");
+}
+
+
+.blog-header {
+    padding-top: 80px;
+    margin: 0 auto;
+    width: 80%;
+    white-space: normal;
+    font-size: 30px;
+}
+
+.blog-title {
+    margin: 10% 10px 10px 10px;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.blog-description {
+    font-size: 20px;
+    color: #999;
+}
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Pagination */
+.pager {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.pager > li > a {
+    width: 140px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+    margin-bottom: 60px;
+    white-space: normal;
+}
+
+.blog-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.blog-post-meta {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+/*
+ * Footer
+ */
+
+.line1 {
+    background-color: #eaeaea;
+}
+
+.line2 {
+    background-color: #888888;
+}
+
+.line3 {
+    background-color: #383838;
+}
+
+.blog-footer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.copyright{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 50%;
+}
+.logo-footer{
+    padding-left: 20px;
+}

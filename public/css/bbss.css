@@ -1,0 +1,174 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #000;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    color: #000000;
+}
+body {
+    font-family: Candara;
+    color: #000000;
+    text-align: center;
+    text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    min-height: 100%;
+
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+/*
+Буквы ББСС
+ */
+.brand {
+    margin-bottom: 2rem;
+}
+.brand-red {
+    color: #db0000;
+}
+.brand-black {
+    color: #000000;
+}
+.slog .slog-black {
+    margin-right: 28px;
+    color: #000000;
+}
+
+.slog .slog-red {
+    margin: 1px 1px 1px 1px;
+    color: #db0000;
+}
+
+/*--------------------------------------------*/
+/*
+            Меню
+ */
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: bold;
+    color: rgba(255,255,255,.5);
+    background-color: transparent;
+}
+
+.nav-default .nav-link:hover,
+.nav-default .nav-link:focus {
+    color: red;
+}
+
+.nav-default .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-default .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+    .brand {
+        float: left;
+    }
+    .nav-default{
+        float: right;
+    }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 0 1.5rem;
+}
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media (min-width: 62em) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 42rem;
+    }
+}
